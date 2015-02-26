@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/ic_launcher"
+        android:scaleType="centerInside"
+        android:layout_above="@+id/btn_pick_image" />
+    
+    <ProgressBar 
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_pick_image"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"
+        android:indeterminate="true"
+        style="@android:attr/progressBarStyleLarge"
+        />
+
+    <Button
+        android:id="@+id/btn_pick_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_upload_image"
+        android:layout_alignLeft="@+id/btn_upload_image"
+        android:layout_alignRight="@+id/btn_upload_image"
+        android:layout_marginBottom="@dimen/dp8"
+        android:text="@string/pick_image" />
+
+    <Button
+        android:id="@+id/btn_upload_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"        
+        android:text="@string/upload_image" />
+
+</RelativeLayout>
